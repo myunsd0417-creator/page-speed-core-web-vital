@@ -1,0 +1,8 @@
+{
+  "actorOutputSchemaVersion": 1,
+  "title": "Page speed results",
+  "properties": {
+    "results": { "type": "string", "title": "Results per URL", "description": "Scores, Core Web Vitals and top fixes for each URL and device.", "template": "{{links.apiDefaultDatasetUrl}}/items" },
+    "report": { "type": "string", "title": "HTML report", "description": "Shareable color-coded report.", "template": "{{links.apiDefaultKeyValueStoreUrl}}/records/REPORT.html" }
+  }
+}

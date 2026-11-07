@@ -1,0 +1,39 @@
+{
+  "actorSpecification": 1,
+  "name": "page-speed-core-web-vitals",
+  "title": "Page Speed & Core Web Vitals Checker (Lighthouse, no API key)",
+  "description": "Bulk-test page speed for any list of URLs with Google Lighthouse. Get performance, SEO and accessibility scores, LCP, CLS, TBT, FCP and the top fixes for mobile and desktop. No API key needed. English or Japanese report.",
+  "version": "0.1",
+  "input": "./input_schema.json",
+  "output": "./output_schema.json",
+  "readme": "./README.md",
+  "dockerfile": "./Dockerfile",
+  "storages": {
+    "dataset": {
+      "actorSpecification": 1,
+      "views": {
+        "overview": {
+          "title": "Results",
+          "transformation": {
+            "fields": [
+              "url",
+              "device",
+              "performanceScore",
+              "lcpMs",
+              "cls",
+              "tbtMs",
+              "seoScore",
+              "accessibilityScore",
+              "topOpportunities",
+              "error"
+            ]
+          },
+          "display": {
+            "component": "table"
+          }
+        }
+      }
+    }
+  },
+  "defaultMemoryMbytes": 4096
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Page speed input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "urls": { "title": "URLs", "type": "array", "editor": "stringList", "description": "Pages to test. One full URL per line.", "prefill": ["https://apify.com", "https://crawlee.dev"] },
+    "device": { "title": "Device", "type": "string", "editor": "select", "enum": ["mobile","desktop","both"], "enumTitles": ["Mobile","Desktop","Both (charged twice per URL)"], "default": "mobile", "description": "Lighthouse emulation. Google ranks on mobile." },
+    "maxUrls": { "title": "Max URLs", "type": "integer", "minimum": 1, "maximum": 500, "default": 20, "description": "Safety limit. You are charged per tested URL and device." },
+    "language": { "title": "Report language", "type": "string", "editor": "select", "enum": ["en","ja"], "enumTitles": ["English","日本語"], "default": "en", "description": "Language of fix titles and the HTML report." }
+  },
+  "required": ["urls"]
+}
