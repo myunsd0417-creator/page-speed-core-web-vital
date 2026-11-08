@@ -57,6 +57,7 @@ Pay per tested page (one URL on one device). Failed URLs are not charged.
 ## More tools from the same author
 
 - [SEO Audit & AI Search Readiness Checker](https://apify.com/mirumiru_miru17/seo-ai-readiness-audit): full-site SEO audit, AI search readiness score and llms.txt generator
+- [Image & PDF OCR to Text (Japanese + English)](https://apify.com/mirumiru_miru17/image-pdf-ocr-japanese): text from images and scanned PDFs, Japanese incl. vertical
 - [Audio & Video to Text Transcriber (Whisper)](https://apify.com/mirumiru_miru17/audio-video-transcriber): transcripts and SRT subtitles in Japanese and 90+ languages
 
 ---
